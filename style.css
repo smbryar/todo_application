@@ -51,4 +51,8 @@
     width: 1em;
 }
 
+.completed {
+    background-color: lightgray;
+}
+
 /* Media queries */
