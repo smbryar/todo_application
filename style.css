@@ -1,4 +1,11 @@
 /* Default mobile styles */
+.body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container.fluid {
+    width: 95%;
+}
 
 .navbar {
     height: 60px;
@@ -7,14 +14,12 @@
 .task {
     height: 100px;
     background-color: lightblue;
-    margin: 5px;
     padding: 5px;
 }
 
 .intro {
     height: 80px;
     background-color: lightyellow;
-    margin: 5px;
     padding: 5px;
 }
 
@@ -22,4 +27,10 @@
     background-color: lightgreen;
     padding: 5px;
 }
+
+.add-task, .complete, .delete {
+    height: 1em;
+    width: 1em;
+}
+
 /* Media queries */
