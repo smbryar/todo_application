@@ -3,22 +3,40 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.container.fluid {
+.container-fluid {
     width: 95%;
 }
 
 .navbar {
-    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
 }
 
+.collapse:not(.show) {
+    display: none;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    font-size: 2em;
+  }
+
 .task {
-    height: 100px;
     background-color: lightblue;
-    padding: 5px;
+}
+
+.task-container {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0.5em;
 }
 
 .intro {
-    height: 80px;
     background-color: lightyellow;
     padding: 5px;
 }
