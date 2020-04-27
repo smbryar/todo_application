@@ -1,8 +1,25 @@
 /* Default mobile styles */
 
-body {
-    background-color: lightslategray;
+.navbar {
+    height: 60px;
 }
 
+.task {
+    height: 100px;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+}
 
+.intro {
+    height: 80px;
+    background-color: lightyellow;
+    margin: 5px;
+    padding: 5px;
+}
+
+.info-panel {
+    background-color: lightgreen;
+    padding: 5px;
+}
 /* Media queries */
