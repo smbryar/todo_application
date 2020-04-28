@@ -3,5 +3,5 @@
 - Buttons not well aligned
 - Button for repeating taks
 - Card open for tasks
-- Side information panel not having margin
+- Side information panel not having margin, pushed by card option
 - Change form label style
