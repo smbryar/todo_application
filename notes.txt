@@ -1,0 +1,7 @@
+# Issues to resolve:
+
+- Buttons not well aligned
+- Button for repeating taks
+- Card open for tasks
+- Side information panel not having margin
+- Change form label style

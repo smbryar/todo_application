@@ -11,13 +11,13 @@
 </head>
 
 <body style="padding-top: 70px">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navbar toggler not working -->
-
+        <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarCollapse" style>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -28,7 +28,9 @@
                 </li>
             </ul>
         </div>
+        <!-- Heading -->
         <a class="navbar-brand" href="#">My Tasks</a>
+        <!-- Settings button -->
         <button type="button" class="btn settings">
             <svg class="bi bi-gear" width="2em" height="2em" viewBox="0 0 16 16" fill="white"
                 xmlns="http://www.w3.org/2000/svg">
@@ -45,25 +47,27 @@
     <main class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-6">
-                
+                <!-- Intro containing dynamic numbers -->
                 <div class="row rounded m-1 intro">
                     <div class="intro-container">
                         <p>You have {n} tasks to complete today out of {n} unfinished tasks.</p>
                     </div>
                 </div>
-                
-                <!-- Can I change label style e.g. bold -->
+                <!-- Add task form -->
                 <div class="row rounded m-1 new task">
                     <div class="container-fluid task-container">
                         <div class="row">
                             <div class="col-11">
                                 <form>
-                                    <div class = "form-group">                                        
+                                    <!-- Add new task -->
+                                    <div class="form-group">
                                         <label for="task-name">Add new task</label>
-                                        <input type="text" class="form-control" id="task-name" placeholder="Name your next task">
+                                        <input type="text" class="form-control" id="task-name"
+                                            placeholder="Name your next task">
                                     </div>
                                 </form>
                             </div>
+                            <!-- Submit button -->
                             <div class="col-1">
                                 <button type="submit" class="btn add-task align-top">
                                     <svg class="bi bi-plus-circle" width="1.5em" height="1.5em" viewBox="0 0 16 16"
@@ -81,18 +85,20 @@
                                 </button>
                             </div>
                         </div>
+                        <!-- Start and End Date inputs -->
                         <div class="row dates">
                             <div class="col-6">
                                 <form>
-                                    <div class = "form-group">
+                                    <div class="form-group">
                                         <label for="end-date">Start date</label>
-                                        <input type="date" class="form-control" id="start-date" placeholder="Start date">
+                                        <input type="date" class="form-control" id="start-date"
+                                            placeholder="Start date">
                                     </div>
                                 </form>
                             </div>
                             <div class="col-6">
                                 <form>
-                                    <div class = "form-group">
+                                    <div class="form-group">
                                         <label for="end-date">End date</label>
                                         <input type="date" class="form-control" id="end-date">
                                     </div>
@@ -101,14 +107,15 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Example task -->
                 <div class="row rounded m-1 task">
                     <div class="container-fluid task-container">
                         <div class="row">
+                            <!-- Task Name -->
                             <div class="col-10">
-                                <h4>Task 2</h4>
+                                <h4>Task 1</h4>
                             </div>
-                            <!-- Buttons are not well-aligned -->
+                            <!-- Complete check box button -->
                             <div class="col-1">
                                 <button button type="button" class="btn align-top complete">
                                     <svg class="bi bi-check-box" width="1.5em" height="1.5em" viewBox="0 0 16 16"
@@ -122,6 +129,7 @@
                                     </svg>
                                 </button>
                             </div>
+                            <!-- Delete check box button -->
                             <div class="col-1">
                                 <button button type="button" class="btn align-top delete">
                                     <svg class="bi bi-x-square" width="1.28em" height="1.28em" viewBox="0 0 16 16"
@@ -139,6 +147,7 @@
                                 </button>
                             </div>
                         </div>
+                        <!-- Start and End dates -->
                         <div class="row dates">
                             <div class="col-6">
                                 Start Date
@@ -150,61 +159,16 @@
                     </div>
                 </div>
 
-                <div class="row rounded m-1 task">
-                    <div class="container-fluid task-container">
-                        <div class="row">
-                            <div class="col-10">
-                                <h4>Task 3</h4>
-                            </div>
-                            <!-- Buttons are not well-aligned -->
-                            <div class="col-1">
-                                <button button type="button" class="btn align-top complete">
-                                    <svg class="bi bi-check-box" width="1.5em" height="1.5em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="col-1">
-                                <button button type="button" class="btn align-top delete">
-                                    <svg class="bi bi-x-square" width="1.28em" height="1.28em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row dates">
-                            <div class="col-6">
-                                Start Date
-                            </div>
-                            <div class="col-6 text-right">
-                                End Date
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
+                <!-- Example completed task -->
                 <div class="row rounded m-1 completed task">
                     <div class="container-fluid task-container">
                         <div class="row">
+                            <!-- Task name -->
                             <div class="col-12">
                                 <h4><del>Task 2</del></h4>
-                            </div>                          
+                            </div>
                         </div>
+                        <!-- Date completed -->
                         <div class="row dates">
                             <div class="col-12">
                                 Date Completed
@@ -216,12 +180,23 @@
                 </div>
 
             </div>
+            <!-- Side panel (only on laptop or larger) -->
             <div class="d-none d-lg-block col-lg-6 rounded info-panel">
                 Side information panel
             </div>
         </div>
     </main>
 
+    <!-- Javascript scripts from bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
