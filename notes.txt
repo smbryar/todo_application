@@ -1,7 +1,7 @@
 # Issues to resolve:
 
 - Buttons not well aligned
-- Button for repeating taks
+- Button for repeating task and space to input on new task
 - Card open for tasks
 - Side information panel not having margin, pushed by card option
 - Change form label style

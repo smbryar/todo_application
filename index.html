@@ -47,184 +47,185 @@
     <main class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <!-- Intro containing dynamic numbers -->
-                <div class="row rounded m-1 intro">
-                    <div class="intro-container">
-                        <p>You have {n} tasks to complete today out of {n} unfinished tasks.</p>
-                    </div>
-                </div>
-                <!-- Add task form -->
-                <div class="row rounded m-1 new task">
-                    <div class="container-fluid task-container">
-                        <div class="row">
-                            <div class="col-11">
-                                <form>
-                                    <!-- Add new task -->
-                                    <div class="form-group">
-                                        <label for="task-name">Add new task</label>
-                                        <input type="text" class="form-control" id="task-name"
-                                            placeholder="Name your next task">
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- Submit button -->
-                            <div class="col-1">
-                                <button type="submit" class="btn add-task align-top">
-                                    <svg class="bi bi-plus-circle" width="1.5em" height="1.5em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Start and End Date inputs -->
-                        <div class="row dates">
-                            <div class="col-6">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="end-date">Start date</label>
-                                        <input type="date" class="form-control" id="start-date"
-                                            placeholder="Start date">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-6">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="end-date">End date</label>
-                                        <input type="date" class="form-control" id="end-date">
-                                    </div>
-                                </form>
-                            </div>
+                <div class="task-column ml-2">
+                    <!-- Intro containing dynamic numbers -->
+                    <div class="row rounded intro my-1">
+                        <div class="intro-container">
+                            <p>You have {n} tasks to complete today out of {n} unfinished tasks.</p>
                         </div>
                     </div>
-                </div>
-                <!-- Example task -->
-                <div class="row rounded m-1 task">
-                    <div class="container-fluid task-container">
-                        <div class="row">
-                            <!-- Task Name -->
-                            <div class="col-10">
-                                <h4>First type of task box</h4>
+                    <!-- Add task form -->
+                    <div class="row rounded new task my-1">
+                        <div class="container-fluid task-container">
+                            <div class="row">
+                                <div class="col-11">
+                                    <form>
+                                        <!-- Add new task -->
+                                        <div class="form-group">
+                                            <label for="task-name">Add new task</label>
+                                            <input type="text" class="form-control" id="task-name"
+                                                placeholder="Name your next task">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Submit button -->
+                                <div class="col-1">
+                                    <button type="submit" class="btn add-task align-top">
+                                        <svg class="bi bi-plus-circle" width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <!-- Complete check box button -->
-                            <div class="col-1">
-                                <button button type="button" class="btn align-top complete">
-                                    <svg class="bi bi-check-box" width="1.5em" height="1.5em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
+                            <!-- Start and End Date inputs -->
+                            <div class="row dates">
+                                <div class="col-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="end-date">Start date</label>
+                                            <input type="date" class="form-control" id="start-date"
+                                                placeholder="Start date">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="end-date">End date</label>
+                                            <input type="date" class="form-control" id="end-date">
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <!-- Delete check box button -->
-                            <div class="col-1">
-                                <button button type="button" class="btn align-top delete">
-                                    <svg class="bi bi-x-square" width="1.28em" height="1.28em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
                             </div>
-                        </div>
-                        <!-- Start and End dates -->
-                        <div class="row dates">
-                            <div class="col-6">
-                                Start Date
+                    </div>
+                    <!-- Example task -->
+                    <div class="row rounded task my-1">
+                        <div class="container-fluid task-container">
+                            <div class="row">
+                                <!-- Task Name -->
+                                <div class="col-10">
+                                    <h4>First type of task box</h4>
+                                </div>
+                                <!-- Complete check box button -->
+                                <div class="col-1">
+                                    <button button type="button" class="btn align-top complete">
+                                        <svg class="bi bi-check-box" width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Delete check box button -->
+                                <div class="col-1">
+                                    <button button type="button" class="btn align-top delete">
+                                        <svg class="bi bi-x-square" width="1.28em" height="1.28em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-6 text-right">
-                                End Date
+                            <!-- Start and End dates -->
+                            <div class="row dates">
+                                <div class="col-6">
+                                    Start Date
+                                </div>
+                                <div class="col-6 text-right">
+                                    End Date
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Example repeating task -->
-                <div class="row rounded m-1 task">
-                    <div class="container-fluid task-container">
-                        <div class="row">
-                            <!-- Repeat symbol-->
-                            <div class="col-1">
-                                <svg class="bi bi-arrow-clockwise" width="1.5em" height="1.5em" viewBox="0 0 16 16"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M3.17 6.706a5 5 0 017.103-3.16.5.5 0 10.454-.892A6 6 0 1013.455 5.5a.5.5 0 00-.91.417 5 5 0 11-9.375.789z"
-                                        clip-rule="evenodd" />
-                                    <path fill-rule="evenodd"
-                                        d="M8.147.146a.5.5 0 01.707 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 11-.707-.708L10.293 3 8.147.854a.5.5 0 010-.708z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <!-- Task name -->
-                            <div class="col-9">
-                                <h4>Example repeating task/chore</h4>
-                            </div>
-                            <!-- Complete check box button -->
-                            <div class="col-1">
-                                <button button type="button" class="btn align-top complete">
-                                    <svg class="bi bi-check-box" width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                    <!-- Example repeating task -->
+                    <div class="row rounded task my-1">
+                        <div class="container-fluid task-container">
+                            <div class="row">
+                                <!-- Repeat symbol-->
+                                <div class="col-1">
+                                    <svg class="bi bi-arrow-clockwise" width="1.5em" height="1.5em" viewBox="0 0 16 16"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
-                                            d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z"
+                                            d="M3.17 6.706a5 5 0 017.103-3.16.5.5 0 10.454-.892A6 6 0 1013.455 5.5a.5.5 0 00-.91.417 5 5 0 11-9.375.789z"
                                             clip-rule="evenodd" />
                                         <path fill-rule="evenodd"
-                                            d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z"
+                                            d="M8.147.146a.5.5 0 01.707 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 11-.707-.708L10.293 3 8.147.854a.5.5 0 010-.708z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                </button>
+                                </div>
+                                <!-- Task name -->
+                                <div class="col-9">
+                                    <h4>Example repeating task/chore</h4>
+                                </div>
+                                <!-- Complete check box button -->
+                                <div class="col-1">
+                                    <button button type="button" class="btn align-top complete">
+                                        <svg class="bi bi-check-box" width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Delete check box button -->
+                                <div class="col-1">
+                                    <button button type="button" class="btn align-top delete">
+                                        <svg class="bi bi-x-square" width="1.28em" height="1.28em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <!-- Delete check box button -->
-                            <div class="col-1">
-                                <button button type="button" class="btn align-top delete">
-                                    <svg class="bi bi-x-square" width="1.28em" height="1.28em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Start and End dates -->
-                        <div class="row dates">
-                            <div class="col-6">
-                                Start Date
-                            </div>
-                            <div class="col-6 text-right">
-                                End Date
+                            <!-- Start and End dates -->
+                            <div class="row dates">
+                                <div class="col-6">
+                                    Start Date
+                                </div>
+                                <div class="col-6 text-right">
+                                    End Date
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Example accordian cards - alternative task option -->
-                <!-- <div id="accordion">
+                    <!-- Example accordian cards - alternative task option -->
+                    <!-- <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
@@ -243,35 +244,37 @@
                         </div>
                     </div> -->
 
-
-
-
-
-
-                <!-- Example completed task -->
-                <div class="row rounded m-1 completed task">
-                    <div class="container-fluid task-container">
-                        <div class="row">
-                            <!-- Task name -->
-                            <div class="col-12">
-                                <h4><del>Task 2</del></h4>
+                    <!-- Example completed task -->
+                    <div class="row rounded completed task my-1">
+                        <div class="container-fluid task-container">
+                            <div class="row">
+                                <!-- Task name -->
+                                <div class="col-12">
+                                    <h4><del>Task 2</del></h4>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Date completed -->
-                        <div class="row dates">
-                            <div class="col-12">
-                                Date Completed
+                            <!-- Date completed -->
+                            <div class="row dates">
+                                <div class="col-12">
+                                    Date Completed
+                                </div>
                             </div>
+
+
                         </div>
-
-
                     </div>
-                </div>
 
+                </div>
             </div>
             <!-- Side panel (only on laptop or larger) -->
-            <div class="d-none d-lg-block col-lg-6 rounded info-panel">
-                Side information panel
+            <div class="d-none d-lg-block col-lg-6 ">
+                <div class="info-column mr-2">
+                    <div class="row info-panel rounded my-1 ">
+                        <div class="info-panel-contents">
+                            Side information panel
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

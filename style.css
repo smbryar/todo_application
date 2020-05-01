@@ -3,10 +3,6 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* .container-fluid {
-    width: 95%;
-} */
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +53,11 @@
 
 .card {
     width: 90%;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 /* Media queries */
